@@ -1,0 +1,33 @@
+    <div class="content_post" style="background-image: url(<%= tweet.image %>);">
+      <div class="more">
+        <span><%= image_tag 'arrow_top.png' %></span>
+        <ul class="more_list">
+          <li>
+            <%= link_to '詳細', "/tweets/#{tweet.id}", method: :get %>
+          </li>
+          <% if user_signed_in? && current_user.id == tweet.user_id %>
+            <li>
+              <%= link_to '編集', "/tweets/#{tweet.id}/edit", method: :get %>
+            </li>
+            <li>
+              <%= link_to '削除', "/tweets/#{tweet.id}", method: :delete %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+      <%= simple_format(tweet.text) %>
+      <span class="name">
+        <a href="/users/<%= tweet.user.id %>">
+          <span>投稿者</span><%= tweet.user.nickname %>
+        </a>
+      </span>
+      <% unless user_signed_in? && current_user.likes.find_by(tweet_id: tweet.id) %>  
+        <%= link_to tweet_likes_path(tweet), method: :post do %>
+          <i class="fa fa-heart like-btn" ></i>
+        <% end %>
+      <% else %>
+        <%= link_to tweet_like_path(tweet, current_user.likes.find_by(tweet_id: tweet.id)), method: :delete do %>
+          <i class="fa fa-heart unlike-btn"></i>
+        <% end %>
+      <% end %>
+    </div>  
