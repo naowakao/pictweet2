@@ -20,6 +20,16 @@
       </a>
     </span>
   </div>
+
+    <div class="cooking">
+    <div class="example1">
+      <%= simple_format(@tweet.item) %>
+    </div>
+    <div class="example2">
+      <%= simple_format(@tweet.cook) %>
+    </div>
+  </div>
+
   <div class="container">
     <% if current_user %>
       <%= form_with(model: [@tweet, @comment], local: true) do |form| %>
