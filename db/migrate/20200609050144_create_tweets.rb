@@ -6,6 +6,7 @@ class CreateTweets < ActiveRecord::Migration[5.2]
       t.text :image
       t.text :item
       t.text :cook  
+      t.string :url
       t.timestamps
     end
   end
