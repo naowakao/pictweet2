@@ -21,12 +21,15 @@
     </span>
   </div>
 
-    <div class="cooking">
+  <div class="cooking">
     <div class="example1">
       <%= simple_format(@tweet.item) %>
     </div>
     <div class="example2">
       <%= simple_format(@tweet.cook) %>
+    </div>
+    <div class="example3">
+      <%= raw Rinku.auto_link(h(@tweet.url)) %>
     </div>
   </div>
 
