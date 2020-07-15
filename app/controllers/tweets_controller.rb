@@ -16,6 +16,16 @@ class TweetsController < ApplicationController
     Tweet.create(tweet_params)
   end
 
+    # tweetをいいねする
+  def iine(user)
+    likes.create(user_id: user.id)
+  end
+
+  # tweetのいいねを解除する
+  def uniine(user)
+    likes.find_by(user_id: user.id).destroy
+  end
+
   def destroy
     tweet = Tweet.find(params[:id])
     tweet.destroy
@@ -39,7 +49,6 @@ class TweetsController < ApplicationController
   def search
     @tweets = Tweet.search(params[:keyword])
   end
-
 
   private
   def tweet_params
