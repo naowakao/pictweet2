@@ -13,9 +13,9 @@ https://kozinkaihatuapuri.herokuapp.com/
 インスタグラムのようなイメージのレシピ投稿サイトを作りたかったため
 
 ## \:spaghetti: DEMO
-![toppage](https://gyazo.com/0f987fe907783664da405a66ecde88a8)
-![post](https://gyazo.com/c442af39c8d8be76d7b118bed24751db)
-![show](https://gyazo.com/1578ffc96976c805d1d6d9a96fae03b5)
+https://gyazo.com/0f987fe907783664da405a66ecde88a8
+https://gyazo.com/c442af39c8d8be76d7b118bed24751db
+https://gyazo.com/1578ffc96976c805d1d6d9a96fae03b5
 
 ## \:spaghetti: 開発環境
 ・VSCode（Visual Studio Code）
