@@ -1,5 +1,5 @@
 class AddLikesCountToTweets < ActiveRecord::Migration[5.2]
-  class TweetUser < ApplicationRecord
+  class MigrationUser < ApplicationRecord
     self.table_name = :tweets
   end
 
