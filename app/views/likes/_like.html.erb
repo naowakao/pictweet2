@@ -1,10 +1,11 @@
-<%# <% if !tweet.like_users.include?(current_user) %> %>
-<% if user_signed_in? && current_user.likes.find_by(tweet_id: tweet.id) %>  
-  <%= link_to likes_path(tweet_id: tweet.id), method: :post do %>
-    <i class="far fa-heart like-btn" ></i>
+<% unless user_signed_in? && current_user.likes.find_by(tweet_id: tweet.id) %>  
+  <%= link_to tweet_likes_path(tweet), method: :post do %>
+    <i class="fa fa-heart like-btn" ></i>
+      <%= content_tag :span, "#{tweet.likes_count}", class: "glyphicon glyphicon-heart" %>
   <% end %>
 <% else %>
-  <%= link_to likes_path(tweet_id: tweet.id), method: :delete do %>
-    <i class="fas fa-heart unlike-btn"></i>
+  <%= link_to tweet_like_path(tweet, current_user.likes.find_by(tweet_id: tweet.id)), method: :delete do %>
+    <i class="fa fa-heart unlike-btn"></i>
+      <%= content_tag :span, "#{tweet.likes_count}", class: "glyphicon glyphicon-heart-empty" %>
   <% end %>
 <% end %>
