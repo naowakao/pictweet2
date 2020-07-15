@@ -1,21 +1,30 @@
 # Cooking Tweet
 
-## \:egg: 概要
+## \:spaghetti: 概要
 ・レシピの投稿
 ・レシピ検索
 ・コメント
 ・いいね
 
-## \:egg: 本番環境
+## \:spaghetti: 本番環境
 https://kozinkaihatuapuri.herokuapp.com/
 
-## \:egg: 制作背景
+## \:spaghetti: 制作背景
 インスタグラムのようなイメージのレシピ投稿サイトを作りたかったため
 
-## \:egg:DEMO
-https://gyazo.com/0f987fe907783664da405a66ecde88a8
+## \:spaghetti: DEMO
+![toppage](https://gyazo.com/0f987fe907783664da405a66ecde88a8 "トップページ")
+![post](https://gyazo.com/c442af39c8d8be76d7b118bed24751db "投稿画面")
+![show](https://gyazo.com/1578ffc96976c805d1d6d9a96fae03b5 "詳細画面")
 
-## \:egg:DB設計
+## \:spaghetti: 開発環境
+・VSCode（Visual Studio Code）
+・Ruby on Rails
+・MySQL
+・Github
+・Heroku
+
+## \:spaghetti:DB設計
 
 ## usersテーブル
 |Column|Type|Options|
