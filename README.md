@@ -1,5 +1,22 @@
-# README
-# Pictweet2 DB設計
+# Cooking Tweet
+
+## \:egg: 概要
+・レシピの投稿
+・レシピ検索
+・コメント
+・いいね
+
+## \:egg: 本番環境
+https://kozinkaihatuapuri.herokuapp.com/
+
+## \:egg: 制作背景
+インスタグラムのようなイメージのレシピ投稿サイトを作りたかったため
+
+## \:egg:DEMO
+https://gyazo.com/0f987fe907783664da405a66ecde88a8
+
+## \:egg:DB設計
+
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -42,28 +59,3 @@
 ### Association
 - belongs_to :tweet
 - belongs_to :user
-
-
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
