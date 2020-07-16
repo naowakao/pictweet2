@@ -9,6 +9,10 @@
 ## \:spaghetti: 本番環境
 https://kozinkaihatuapuri.herokuapp.com/
 
+テスト用ユーザー
+メールアドレス：test103@test.test
+パスワード：naonaonao
+
 ## \:spaghetti: 制作背景
 インスタグラムのようなイメージのレシピ投稿サイトを作りたかったため
 
