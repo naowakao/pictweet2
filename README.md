@@ -1,17 +1,17 @@
 # Cooking Tweet
 
 ## \:spaghetti: 概要
-・レシピの投稿
-・レシピ検索
-・コメント
-・いいね
+・レシピの投稿  
+・レシピ検索  
+・コメント  
+・いいね  
 
 ## \:spaghetti: 本番環境
 https://kozinkaihatuapuri.herokuapp.com/
 
-テスト用ユーザー
-メールアドレス：test103@test.test
-パスワード：naonaonao
+テスト用ユーザー  
+メールアドレス：test103@test.test  
+パスワード：naonaonao  
 
 ## \:spaghetti: 制作背景
 インスタグラムのようなイメージのレシピ投稿サイトを作りたかったため
@@ -22,11 +22,11 @@ https://gyazo.com/c442af39c8d8be76d7b118bed24751db
 https://gyazo.com/1578ffc96976c805d1d6d9a96fae03b5
 
 ## \:spaghetti: 開発環境
-・VSCode（Visual Studio Code）
-・Ruby on Rails
-・MySQL
-・Github
-・Heroku
+・VSCode（Visual Studio Code）  
+・Ruby on Rails  
+・MySQL  
+・Github  
+・Heroku  
 
 ## \:spaghetti:DB設計
 
